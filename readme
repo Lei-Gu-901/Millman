@@ -1,0 +1,13 @@
+This is an implimentation of networks built with the neuron model proposed in Nature Physics 6, 801 (2010).
+Usage of it is as the follows:
+1) make and run the main file (the presented results are with f_e=40 Hz).
+2) Causal.py caculates size and duration distribution of the causal avalanches.
+3) Timebin.py generates size and duration distribution of the time-bin avalanches.
+4) Branchingrate.py calculates the causal branching rate.
+5) To generate a new network, compile and run network.cpp. Due to randomness of connections, sometimes the branching rate can deviate from 1.
+   Rebuild the network in this case. copy the screen-printed number to the csize varialbe in main.cpp, which is the number of total connections in the network.
+   Then, 1) make and run the main file.
+6) bufurcation.cpp generates the postsynaptic firing rate of a presynaptic firing rate for a single layer based on analytical solution of the model.
+7) LIAvalanche.py plots the proportion of left inclined avalanches.
+
+This project is licensed under the terms of the MIT license.
